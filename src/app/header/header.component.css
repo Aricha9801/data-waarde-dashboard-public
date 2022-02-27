@@ -1,0 +1,27 @@
+header {
+    background-color: #008dc9;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:0.5rem;
+    width:auto;
+    display:flex;
+    /* justify-content:left */
+}
+h1 {
+    color:white;
+    font-size: 2.1rem;
+}
+/* #logo-holder {
+    position:absolute;
+    left:0
+}
+#align-self-center {
+    position:absolute;
+    right:50%
+}
+#title {
+    position:absolute;
+    left:50%
+} */
+
+

@@ -1,0 +1,15 @@
+
+button {
+    height:1.6rem;
+    line-height: 1.2rem;
+    font-size:0.7rem;
+    padding:0.15rem;
+    margin:0.16rem
+}
+a {
+    color: #547B1C;
+    text-decoration: none; /* no underline */
+  }
+a:hover {
+    color:white
+}

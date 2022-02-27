@@ -1,0 +1,24 @@
+.matric {
+    background-color: white;
+    margin:8px;
+    padding:5px
+}
+article {
+    margin:0.75rem;
+
+}
+
+h3 {
+    font-size: 1.1875rem;
+    
+}
+p {
+    font-size: 0.9rem;
+}
+a {
+    font-size: 1rem;
+    
+}
+img {
+    border: 1px solid #919191;
+  }
