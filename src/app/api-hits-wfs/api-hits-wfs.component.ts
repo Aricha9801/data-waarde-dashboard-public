@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 //import { BrowserModule } from '@angular/platform-browser';
 import { Color, NgxChartsModule, ScaleType } from '@swimlane/ngx-charts';
-import { scaleOrdinal } from 'd3';
+//import { scaleOrdinal } from 'd3';
 import {SparqlService} from '../sparql.service';
 import {Subject} from 'rxjs';
 
 @Component({
-  selector: 'app-api-hints',
-  templateUrl: './api-hints.component.html',
-  styleUrls: ['./api-hints.component.css']
+  selector: 'app-api-hits-wfs',
+  templateUrl: './api-hits-wfs.component.html',
+  styleUrls: ['./api-hits-wfs.component.css']
 })
-export class ApiHintsComponent implements OnInit {
+export class ApiHitsWfsComponent implements OnInit {
   results$: Subject<any>;
   view: [number,number] = [330, 320];
 
@@ -30,31 +30,16 @@ export class ApiHintsComponent implements OnInit {
     name: "exampleName",
     selectable: true,
     group: ScaleType.Ordinal,
-    domain: ['#b4520c','','#b547b1c','#ab2218']
-  };
+    domain: ['#b4520c','','#b547b1c','#ab2218'] };
 
   constructor(public sparql: SparqlService) {
-    this.results$ = this.sparql.apihitsWms$
-    
-  }
-  onSelect(data:any): void {
-    console.log('Item clicked', JSON.parse(JSON.stringify(data)));
-  }
+    this.results$ = this.sparql.apihitsWfs$
 
-  onActivate(data:any): void {
-    console.log('Activate', JSON.parse(JSON.stringify(data)));
-  }
+   }
 
-  onDeactivate(data:any): void {
-    console.log('Deactivate', JSON.parse(JSON.stringify(data)));
-  }
   ngOnInit(): void {
     this.sparql.getApihits();
-    this.sparql.apihitsWms$.subscribe(results => {
-      console.log("api", results);
-    })
     
-  
   }
 
 }

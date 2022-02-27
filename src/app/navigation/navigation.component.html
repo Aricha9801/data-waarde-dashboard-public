@@ -3,15 +3,16 @@
         <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">WMS</a>
+                    <!-- <a class="nav-link active" href="#">WMS</a> -->
+                    <a class="nav-link active" routerLink="/wms" routerLinkActive="active">WMS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">WFS</a>
+                    <a class="nav-link active" routerLink="/wfs" routerLinkActive="active">WFS</a>
                 </li>
             </ul>
         </div>
         <div class="card-body">
-            <app-quality-metrics></app-quality-metrics>   
+            <router-outlet></router-outlet>
         </div>
     </div>
 </div>

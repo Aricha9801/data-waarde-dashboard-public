@@ -1,9 +1,9 @@
-<div class="block" >
+<div class="block">
 
     <div class="matric-holder" id="su-uf">
         <div class="matric" id="su">
             <h3>Service Uptime</h3>
-            <span id="service-uptime" *ngIf="mWmsResult$ | async as mWmsResult">{{mWmsResult.serviceUptime.value}}%</span>
+            <span id="service-uptime" *ngIf="mWfsResult$ | async as mWfsResult">{{mWfsResult.serviceUptime.value}}%</span>
         </div>
         <!-- <div class="matric" id="uf" >
             <h3>Update Frequency</h3>
@@ -12,23 +12,23 @@
         <app-update-frequency></app-update-frequency>
     </div>
     <div class="chart-holder">
-        <app-api-hints></app-api-hints>
+        <app-api-hits-wfs></app-api-hits-wfs>
     </div>
 </div>
 <app-data-viewer></app-data-viewer>
-<div class="block"*ngIf="mWmsResult$ | async as mWmsResult">
+<div class="block"*ngIf="mWfsResult$ | async as mWfsResult">
     <div id="star-holder">
         <div class="matric" id="sr">
             <h3>At Least 4 Star Rating</h3>
-            <span class="fal fa-check" aria-hidden="true" *ngIf="mWmsResult.atLeast4Stars.value==true"></span>
-            <span class="fal fa-times" aria-hidden="true" *ngIf="mWmsResult.atLeast4Stars.value==false"></span>
+            <span class="fal fa-check" aria-hidden="true" *ngIf="mWfsResult.atLeast4Stars.value==true"></span>
+            <span class="fal fa-times" aria-hidden="true" *ngIf="mWfsResult.atLeast4Stars.value==false"></span>
         </div>
     </div>
     <div id="machread-holder">
         <div class="matric" id="mh">
             <h3>Machine Readable</h3>
-            <span class="fal fa-check" aria-hidden="true" *ngIf="mWmsResult.mechineReadable.value==true"></span>
-            <span class="fal fa-times" aria-hidden="true" *ngIf="mWmsResult.mechineReadable.value==false"></span>
+            <span class="fal fa-check" aria-hidden="true" *ngIf="mWfsResult.mechineReadable.value==true"></span>
+            <span class="fal fa-times" aria-hidden="true" *ngIf="mWfsResult.mechineReadable.value==false"></span>
         </div>
     </div>
 

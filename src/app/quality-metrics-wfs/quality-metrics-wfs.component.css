@@ -1,0 +1,85 @@
+.matric {
+    background-color: white;
+    /* margin:8px; */
+    /* padding:5px */
+}
+.block {
+    display:flex;
+    justify-content: space-between;
+}
+.card-body {
+    background-color: #bfe0e5;
+    padding:10px 0 0 0;
+    
+}
+
+
+#su-uf {
+    width:35%;
+    height:20rem
+    /* background-color: cornflowerblue; */
+}
+.chart-holder {
+    width:65%;
+    height:20rem
+    /* background-color: burlywood; */
+}
+
+#star-holder{
+    width:50%;
+}
+#machread-holder {
+    width:50%;
+}
+
+#su {
+        margin:0.45rem 0 0.75rem 0;
+        padding:5px;
+        height:45%;
+}
+
+#uf {
+    margin:0.75rem 0 0 0;
+    padding:5px;
+    height:45%;
+}
+
+#sr {
+    margin:0.75rem 0 0.75rem 0;
+    padding:5px;
+    height:200px
+}
+#mh {
+    margin:0.75rem 0 0.75rem 0.75rem;
+    padding:5px;
+    height:200px
+}
+
+h3 {
+    font-size: 1.1875rem;
+    margin-top: 1.125rem;
+}
+span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#service-uptime {
+    color: #d9c930;
+}
+#update-frequency {
+    color:#70a326
+}
+
+.fa-check {
+    display: inline-block;
+    padding:1.5rem;
+    color:#70a326;
+    font-size:3.5rem
+}
+.fa-times {
+    display: inline-block;
+    padding:1.5rem;
+    color:#d52b1e;
+    font-size:3.5rem
+}
+

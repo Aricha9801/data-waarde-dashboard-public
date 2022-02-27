@@ -26,6 +26,9 @@ import { NgxChartsModule } from '@swimlane/ngx-charts'
 import { HttpClientModule } from '@angular/common/http';
 import { BasicInfoComponent } from './basic-info/basic-info.component';
 import { LicenseComponent } from './license/license.component';
+import { QualityMetricsWfsComponent } from './quality-metrics-wfs/quality-metrics-wfs.component';
+import { ApiHitsWfsComponent } from './api-hits-wfs/api-hits-wfs.component';
+import { UpdateFrequencyComponent } from './update-frequency/update-frequency.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { LicenseComponent } from './license/license.component';
     LinksComponent,
     QualityMetricsComponent,
     BasicInfoComponent,
-    LicenseComponent
+    LicenseComponent,
+    QualityMetricsWfsComponent,
+    ApiHitsWfsComponent,
+    UpdateFrequencyComponent
   ],
   imports: [
     BrowserModule,
