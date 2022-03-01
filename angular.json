@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/dist/css/kadaster-private.min.css"
+              "src/dist/css/kadaster-private.css"
             ],
             "scripts": [
               "src/dist/js/kadaster-huisstijl.js"

@@ -1,9 +1,10 @@
-<div class="block" >
-
+<div class="block">
     <div class="matric-holder" id="su-uf">
         <div class="matric" id="su">
             <h3>Service Uptime</h3>
-            <span id="service-uptime" *ngIf="mWmsResult$ | async as mWmsResult">{{mWmsResult.serviceUptime.value}}%</span>
+            <span id="service-uptime"
+                *ngIf="mWmsResult$ | async as mWmsResult">{{mWmsResult.serviceUptime.value}}%</span>
+                <div matTooltip="Tooltip!">Hover me</div>
         </div>
         <!-- <div class="matric" id="uf" >
             <h3>Update Frequency</h3>
@@ -16,7 +17,7 @@
     </div>
 </div>
 <app-data-viewer></app-data-viewer>
-<div class="block"*ngIf="mWmsResult$ | async as mWmsResult">
+<div class="block" *ngIf="mWmsResult$ | async as mWmsResult">
     <div id="star-holder">
         <div class="matric" id="sr">
             <h3>At Least 4 Star Rating</h3>

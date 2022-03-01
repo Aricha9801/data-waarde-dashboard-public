@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -54,7 +56,8 @@ import { UpdateFrequencyComponent } from './update-frequency/update-frequency.co
     HttpClientModule,
     BrowserAnimationsModule,
     NgxChartsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
