@@ -1,10 +1,12 @@
 <div class="block">
     <div class="matric-holder" id="su-uf">
         <div class="matric" id="su">
+            <div class="info-holder">
+                <span class="fal fa-info-circle" aria-hidden="true" matTooltip="Het percentage van de tijd dat een service beschikbaar is voor gebruik"></span>
+            </div>
             <h3>Service Uptime</h3>
             <span id="service-uptime"
                 *ngIf="mWmsResult$ | async as mWmsResult">{{mWmsResult.serviceUptime.value}}%</span>
-                <div matTooltip="Tooltip!">Hover me</div>
         </div>
         <!-- <div class="matric" id="uf" >
             <h3>Update Frequency</h3>
@@ -20,6 +22,9 @@
 <div class="block" *ngIf="mWmsResult$ | async as mWmsResult">
     <div id="star-holder">
         <div class="matric" id="sr">
+            <div class="info-holder">
+                <span class="fal fa-info-circle" aria-hidden="true" matTooltip="De 5-sterren van linked data is een beoordelingssysteem dat beschrijft in hoeverre de betreffende dataset beschikbaar, herbruikbaar en interoperabel is met andere bronnen op internet. Een beoordeling met minimaal 4 sterren betekent dat de dataset beschikbaar is in een vorm die voldoet aan de open standaarden van het W3C, beschikbaar is in een niet-eigendomsformaat, machineleesbaar is en in een bepaald formaat op het web beschikbaar is. Een waardering van 5 sterren geeft aan dat de dataset is gekoppeld aan andere gekoppelde (open) datasets"></span>
+            </div>
             <h3>At Least 4 Star Rating</h3>
             <span class="fal fa-check" aria-hidden="true" *ngIf="mWmsResult.atLeast4Stars.value==true"></span>
             <span class="fal fa-times" aria-hidden="true" *ngIf="mWmsResult.atLeast4Stars.value==false"></span>
@@ -27,6 +32,9 @@
     </div>
     <div id="machread-holder">
         <div class="matric" id="mh">
+            <div class="info-holder">
+                <span class="fal fa-info-circle" aria-hidden="true" matTooltip="De beschikbaarheid van gegevens in een formaat dat door een computer kan worden verwerkt"></span>
+            </div>
             <h3>Machine Readable</h3>
             <span class="fal fa-check" aria-hidden="true" *ngIf="mWmsResult.mechineReadable.value==true"></span>
             <span class="fal fa-times" aria-hidden="true" *ngIf="mWmsResult.mechineReadable.value==false"></span>

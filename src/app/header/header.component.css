@@ -9,20 +9,11 @@ header {
 }
 h1 {
     color:white;
-    font-size: 2.1rem;
+    /* font-size: 2.1rem; */
 }
-/* #logo-holder {
-    position:absolute;
-    left:0
+span {
+    font-size:2.2rem
 }
-#align-self-center {
-    position:absolute;
-    right:50%
-}
-#title {
-    position:absolute;
-    left:50%
-} */
 img {
     margin-left:15px
 }

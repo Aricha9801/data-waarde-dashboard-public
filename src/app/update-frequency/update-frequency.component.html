@@ -1,4 +1,7 @@
 <div class="matric" id="uf" >
+    <div class="info-holder">
+        <span class="fal fa-info-circle" aria-hidden="true" matTooltip="De frequentie waarmee de gegevens in de dataset (of service) worden bijgewerkt door de gegevensbijdragers"></span>
+    </div>
     <h3>Update Frequency</h3>
     <span id="update-frequency" *ngIf="results$ | async as results">{{results.accuralPeriodicity.value}}</span>
 </div>

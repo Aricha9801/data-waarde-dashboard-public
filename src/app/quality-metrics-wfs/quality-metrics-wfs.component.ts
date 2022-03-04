@@ -11,6 +11,7 @@ import {Subject} from 'rxjs';
 export class QualityMetricsWfsComponent implements OnInit {
   mWfsResult$: Subject<MeasurementBinding>;
   commoninfoResult$: Subject<CommoninfoBinding>;
+  // info: string[];
 
   constructor(public sparql: SparqlService) {
     this.mWfsResult$ = this.sparql.measurementWfs$;

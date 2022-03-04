@@ -1,23 +1,18 @@
 /* title */
 article {
-    /* background-color: white; */
-    margin: 0.75rem;
-    /* padding:5px; */
+    margin: 0.65rem 1rem;
 }
 h2 {
-    /* margin:3px 0; */
     font-size: 1.7rem;
 }
+
 /* abstract */
 #abs-holder {
     height: 25rem;
-
 }
-
 
 h3 {
     font-size: 1.1875rem;
-    
 }
 
 p {
@@ -28,12 +23,3 @@ p {
     height: 18rem;
 
 }
-
-/* h3 {
-    font-size: 1.1875rem;
-    margin-top: 0;
-} */
-
-/* p {
-    font-size: 0.9rem;
-} */
