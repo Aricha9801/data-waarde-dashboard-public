@@ -1,7 +1,10 @@
 .matric {
     background-color: white;
-    /* margin:8px; */
-    /* padding:5px */
+    height:10rem;
+    padding:5px;
+    width: 32%;
+    margin:0.45rem 0;
+    
 }
 .block {
     display:flex;
@@ -14,46 +17,41 @@
 }
 
 
-#su-uf {
+/* #su-uf {
     width:35%;
     height:20rem
-    /* background-color: cornflowerblue; */
-}
+    
+} */
 .chart-holder {
-    width:65%;
-    height:20rem
+    /* width:65%; */
+    height:20rem;
+    margin:0.45rem 0;
     /* background-color: burlywood; */
 }
 
-#star-holder{
-    width:50%;
-}
-#machread-holder {
-    width:50%;
-}
 
-#su {
+/* #su {
         margin:0.45rem 0 0.75rem 0;
         padding:5px;
         height:45%;
-}
+} */
 
-#uf {
+/* #uf {
     margin:0.75rem 0 0 0;
     padding:5px;
     height:45%;
-}
+} */
 
-#sr {
+/* #sr {
     margin:0.75rem 0 0.75rem 0;
     padding:5px;
     height:200px
-}
-#mh {
+} */
+/* #mh {
     margin:0.75rem 0 0.75rem 0.75rem;
     padding:5px;
     height:200px
-}
+} */
 
 h3 {
     font-size: 1.1875rem;
@@ -72,15 +70,15 @@ span {
 
 .fa-check {
     display: inline-block;
-    padding:1.5rem;
+    padding:5px;
     color:#70a326;
-    font-size:3.5rem
+    font-size:3rem
 }
 .fa-times {
     display: inline-block;
     padding:1.5rem;
     color:#d52b1e;
-    font-size:3.5rem
+    font-size:3rem
 }
 
 .info-holder {

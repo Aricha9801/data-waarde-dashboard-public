@@ -8,7 +8,7 @@ h2 {
 
 /* abstract */
 #abs-holder {
-    height: 25rem;
+    height: 30rem;
 }
 
 h3 {
@@ -20,6 +20,10 @@ p {
 }
 /* comment */
 #com-holder {
-    height: 18rem;
+    height: 16rem;
 
+}
+
+li {
+    font-size:0.9rem
 }
