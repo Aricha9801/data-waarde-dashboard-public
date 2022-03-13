@@ -16,42 +16,12 @@
     
 }
 
-
-/* #su-uf {
-    width:35%;
-    height:20rem
-    
-} */
 .chart-holder {
-    /* width:65%; */
     height:20rem;
     margin:0.45rem 0;
-    /* background-color: burlywood; */
+    
 }
 
-
-/* #su {
-        margin:0.45rem 0 0.75rem 0;
-        padding:5px;
-        height:45%;
-} */
-
-/* #uf {
-    margin:0.75rem 0 0 0;
-    padding:5px;
-    height:45%;
-} */
-
-/* #sr {
-    margin:0.75rem 0 0.75rem 0;
-    padding:5px;
-    height:200px
-} */
-/* #mh {
-    margin:0.75rem 0 0.75rem 0.75rem;
-    padding:5px;
-    height:200px
-} */
 
 h3 {
     font-size: 1.1875rem;
@@ -82,7 +52,6 @@ span {
 }
 
 .info-holder {
-    /* width: 0.05rem; */
     position: relative;
     float: right;
     margin-right:0.5rem;

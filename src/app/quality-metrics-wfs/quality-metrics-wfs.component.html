@@ -1,29 +1,31 @@
-<!-- original layout -->
-<div class="block">
-    <div class="matric-holder" id="su-uf">
-        <div class="matric" id="su">
-            <div class="info-holder">
-                <span class="fal fa-info-circle" aria-hidden="true" matTooltip="Het percentage van de tijd dat een service beschikbaar is voor gebruik"></span>
-            </div>
-            <h3>Service Uptime</h3>
-            <span id="service-uptime" *ngIf="mWfsResult$ | async as mWfsResult">{{mWfsResult.serviceUptime.value}}%</span>
+<div class="block" id="metric-holder">
+    <div class="matric" id="su">
+        <div class="info-holder">
+            <span class="fal fa-info-circle" aria-hidden="true"
+                matTooltip="Het percentage van de tijd dat een service beschikbaar is voor gebruik"></span>
         </div>
-        <app-update-frequency></app-update-frequency>
+        <h3>Service Uptime</h3>
+        <span id="service-uptime" *ngIf="mWfsResult$ | async as mWfsResult">{{mWfsResult.serviceUptime.value}}%</span>
     </div>
-    <div class="chart-holder">
-        <app-api-hits-wfs></app-api-hits-wfs>
+    <div class="matric" id="uf">
+        <div class="info-holder">
+            <span class="fal fa-info-circle" aria-hidden="true"
+                matTooltip="Het percentage van de tijd dat een service beschikbaar is voor gebruik"></span>
+        </div>
+        <h3>Update Frequency</h3>
+        <span id="update-frequency" *ngIf="mWfsResult$ | async as mWfsResult">{{mWfsResult.updateFrequency.value}}</span>
     </div>
+    <div class="matric" id="sr" *ngIf="mWfsResult$ | async as mWfsResult">
+        <div class="info-holder">
+            <span class="fal fa-info-circle" aria-hidden="true"
+                matTooltip="De 5-sterren van linked data is een beoordelingssysteem dat beschrijft in hoeverre de betreffende dataset beschikbaar, herbruikbaar en interoperabel is met andere bronnen op internet. Een beoordeling met minimaal 4 sterren betekent dat de dataset beschikbaar is in een vorm die voldoet aan de open standaarden van het W3C, beschikbaar is in een niet-eigendomsformaat, machineleesbaar is en in een bepaald formaat op het web beschikbaar is. Een waardering van 5 sterren geeft aan dat de dataset is gekoppeld aan andere gekoppelde (open) datasets"></span>
+        </div>
+        <h3>At Least 4 Star Rating</h3>
+        <span class="fal fa-check" aria-hidden="true" *ngIf="mWfsResult.atLeast4Stars.value==true"></span>
+        <span class="fal fa-times" aria-hidden="true" *ngIf="mWfsResult.atLeast4Stars.value==false"></span>
+    </div>
+</div>
+<div class="chart-holder">
+    <app-api-hits-wfs></app-api-hits-wfs>
 </div>
 <app-data-viewer></app-data-viewer>
-<div class="block"*ngIf="mWfsResult$ | async as mWfsResult">
-    <div id="star-holder">
-        <div class="matric" id="sr">
-            <div class="info-holder">
-                <span class="fal fa-info-circle" aria-hidden="true" matTooltip="De 5-sterren van linked data is een beoordelingssysteem dat beschrijft in hoeverre de betreffende dataset beschikbaar, herbruikbaar en interoperabel is met andere bronnen op internet. Een beoordeling met minimaal 4 sterren betekent dat de dataset beschikbaar is in een vorm die voldoet aan de open standaarden van het W3C, beschikbaar is in een niet-eigendomsformaat, machineleesbaar is en in een bepaald formaat op het web beschikbaar is. Een waardering van 5 sterren geeft aan dat de dataset is gekoppeld aan andere gekoppelde (open) datasets"></span>
-            </div>
-            <h3>At Least 4 Star Rating</h3>
-            <span class="fal fa-check" aria-hidden="true" *ngIf="mWfsResult.atLeast4Stars.value==true"></span>
-            <span class="fal fa-times" aria-hidden="true" *ngIf="mWfsResult.atLeast4Stars.value==false"></span>
-        </div>
-    </div>
-</div>
