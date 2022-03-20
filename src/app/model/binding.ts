@@ -58,6 +58,10 @@ export interface MeasurementBinding {
     datatype: string,
     value: string;
   },
+  accessUrl: {
+    type: string,
+    value: string
+  }
   
 }
 

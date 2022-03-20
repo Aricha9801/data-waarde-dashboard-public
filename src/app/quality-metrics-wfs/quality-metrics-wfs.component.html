@@ -1,3 +1,8 @@
+<figure class="alert alert-info mb-3">
+    <p>Click the service endpoint link to view the original data &nbsp;&nbsp;
+        <a *ngIf="mWfsResult$ | async as mWfsResult" href={{mWfsResult.accessUrl.value}}><span class="fal fa-file icon-prefix" aria-hidden="true"></span><span class="sr-only">data</span>Link naar de data</a>
+    </p>
+</figure>
 <div class="block" id="metric-holder">
     <div class="matric" id="su">
         <div class="info-holder">
@@ -20,7 +25,7 @@
             <span class="fal fa-info-circle" aria-hidden="true"
                 matTooltip="De 5-sterren van linked data is een beoordelingssysteem dat beschrijft in hoeverre de betreffende dataset beschikbaar, herbruikbaar en interoperabel is met andere bronnen op internet. Een beoordeling met minimaal 4 sterren betekent dat de dataset beschikbaar is in een vorm die voldoet aan de open standaarden van het W3C, beschikbaar is in een niet-eigendomsformaat, machineleesbaar is en in een bepaald formaat op het web beschikbaar is. Een waardering van 5 sterren geeft aan dat de dataset is gekoppeld aan andere gekoppelde (open) datasets"></span>
         </div>
-        <h3>At Least 4 Star Rating</h3>
+        <h3>4 Star Rating</h3>
         <span class="fal fa-check" aria-hidden="true" *ngIf="mWfsResult.atLeast4Stars.value==true"></span>
         <span class="fal fa-times" aria-hidden="true" *ngIf="mWfsResult.atLeast4Stars.value==false"></span>
     </div>
