@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build-labs": "ng build --base-href=/demonstrators/datawaardedashboard/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
